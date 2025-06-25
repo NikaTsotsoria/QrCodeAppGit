@@ -37,45 +37,55 @@ A **C# WinForms application** for generating and managing QR codes. This app all
 ---
 ## 🧱 Project Structure
 
-### `/Models`
-Defines the **data structures** and **core business logic** of the application. This layer is responsible for holding essential information required for QR code generation, such as:
-
-- The text or URL to encode  
-- Configuration options (e.g., size, color, error correction level)
-
-The **Models** layer encapsulates the primary data that drives the app's functionality, keeping everything organized and consistent.
-
----
-
-### `/Form`
-Builds the **WinForms user interface** where users interact with the app. This layer includes:
-
-- Forms and controls for user input (e.g., text fields, color pickers)  
-- UI elements to customize QR code appearance (e.g., size, colors)  
-- Displaying the generated QR code image  
-
-The **Form** also handle user interactions, such as button clicks, to trigger actions like QR code generation or decoding.
-
----
-
 ### `/Interfaces`
-Defines **contracts** and **abstractions** for services like QR code generation and decoding. By using interfaces, the application ensures that components depend on abstract definitions rather than concrete implementations, promoting:
 
-- **Modularity**: Components can be swapped or updated easily  
-- **Maintainability**: Interfaces simplify testing and make code more flexible  
+- **`IQrCodeService.cs`**  
+  Defines the **contract** for QR code-related operations, including generating and decoding QR codes. This interface abstracts QR code functionality, allowing for flexible swapping of the implementation or independent testing.
 
-For example, an interface might declare methods for QR code generation without locking the app into a specific library or implementation.
+- **`IUrlShortenerService.cs`**  
+  Declares methods for **URL shortening** services. This interface allows the app to shorten URLs before encoding them into QR codes, enabling more compact QR code content.
+
+- **`IWatermarkService.cs`**  
+  Specifies methods for **applying watermarks** to QR code images. This supports **customization** and **branding**, allowing QR codes to have logos, text, or other branding elements added to them.
+
+---
+
+### `/Models`
+
+- **`QrCodeSettings.cs`**  
+  Contains **configuration settings** for QR code generation, such as:
+  - Size, colors, and error correction levels
+  - Other customization options for the QR code
+
+  This model centralizes all QR code-related settings, ensuring consistency across the app.
 
 ---
 
 ### `/Services`
-Contains the **core business logic** for QR code generation and decoding. This layer handles:
 
-- QR code creation using libraries like **QRCoder**  
-- QR code decoding using **ZXing.Net**
+- **`QrCodeService.cs`**  
+  Implements the **`IQrCodeService`** interface using libraries like **QRCoder** and **ZXing.Net**. It handles the **core logic** of creating QR codes and decoding data from QR code images.
 
-The **Services** take input from the **Views**, process it with the **Models**, and return results (e.g., QR code images) to be displayed in the UI.
+- **`UrlShortenerService.cs`**  
+  Implements the **`IUrlShortenerService`** interface, providing **URL shortening** functionality. This service interacts with external APIs or custom logic to shorten URLs before encoding them into QR codes.
+
+- **`WatermarkService.cs`**  
+  Implements the **`IWatermarkService`** interface, adding **watermarks** or overlays to QR code images. This feature is useful for branding or additional visual customization of QR codes.
 
 ---
 
-By following this structure, the app maintains a **separation of concerns**, making the code easier to manage, extend, and maintain.
+### `/Form`
+
+- **`Form1.cs`**  
+  The main **WinForms form** where users interact with the application. It contains UI elements like:
+  - Text inputs, buttons for generating and decoding QR codes
+  - Color pickers for customization
+  - Picture boxes to display generated QR codes
+
+  Event handlers in this file connect user actions (e.g., button clicks) to corresponding service calls.
+
+- **`Form1.Designer.cs`**  
+  An **auto-generated file** that defines the layout and UI controls of the form, such as:
+  - Buttons, labels, text boxes, and image containers
+  - Ensures the form’s controls are properly positioned and styled
+
