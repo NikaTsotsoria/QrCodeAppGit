@@ -1,0 +1,16 @@
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\QrCodeApp.exe.config
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\QrCodeApp.exe
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\QrCodeApp.pdb
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\QRCoder.dll
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.csproj.AssemblyReference.cache
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.Form1.resources
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.Properties.Resources.resources
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.csproj.GenerateResource.cache
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.csproj.CoreCompileInputs.cache
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.csproj.Up2Date
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.exe
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\obj\Debug\QrCodeApp.pdb
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\zxing.dll
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\zxing.presentation.dll
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\zxing.xml
+C:\Users\educa\Desktop\QrCode\QrCodeApp\QrCodeApp\bin\Debug\zxing.presentation.xml
