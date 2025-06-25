@@ -47,14 +47,14 @@ The **Models** layer encapsulates the primary data that drives the app's functio
 
 ---
 
-### `/Views`
+### `/Form`
 Builds the **WinForms user interface** where users interact with the app. This layer includes:
 
 - Forms and controls for user input (e.g., text fields, color pickers)  
 - UI elements to customize QR code appearance (e.g., size, colors)  
 - Displaying the generated QR code image  
 
-The **Views** also handle user interactions, such as button clicks, to trigger actions like QR code generation or decoding.
+The **Form** also handle user interactions, such as button clicks, to trigger actions like QR code generation or decoding.
 
 ---
 
